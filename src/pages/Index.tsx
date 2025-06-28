@@ -420,15 +420,15 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="w-full max-w-full flex flex-col md:flex-row justify-between gap-8">
             {/* Contact Info */}
-            <div className="space-y-8">
-              <div className="bg-blue-50 rounded-xl p-6">
+            <div className="w-full max-w-full">
+              <div className="w-full max-w-full bg-blue-50 rounded-xl p-6">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                   Informations Pratiques
                 </h3>
 
-                <div className="space-y-4">
+                <div className="w-full max-w-full flex flex-col gap-6">
                   <div className="flex items-start">
                     <MapPin className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" />
                     <div>
@@ -467,9 +467,9 @@ const Index = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start">
+                  <div className="w-full max-w-full flex items-start">
                     <Clock className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" />
-                    <div>
+                    <div className="w-full max-w-full">
                       <p className="font-medium text-gray-900 mb-2">
                         Horaires d'ouverture
                       </p>
@@ -482,9 +482,9 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="bg-green-50 rounded-xl p-6">
+              <div className="w-full max-w-full bg-green-50 rounded-xl p-6 mt-4">
                 <h4 className="font-semibold text-gray-900 mb-3">Transports</h4>
-                <div className="space-y-2 text-gray-600">
+                <div className="w-full max-w-full text-gray-600">
                   <p>
                     <strong>RER A :</strong> Station Noisiel
                   </p>
@@ -502,14 +502,14 @@ const Index = () => {
             </div>
 
             {/* Map */}
-            <div className="bg-gray-100 rounded-xl h-96 flex items-center justify-center w-full max-w-full">
+            <div className="w-full max-w-full">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d328.19625351537735!2d2.612125814269313!3d48.84733966492076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60f69e6d39dc3%3A0xc3d684eb725d595c!2sDr%20Marzak%20-%20Cabinet%20dentaire%20Dentalid!5e0!3m2!1sfr!2sma!4v1751137299231!5m2!1sfr!2sma"
-                width="600"
-                height="450"
+                style={{ width: "100%", height: "450px", border: 0 }}
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              />
             </div>
           </div>
         </div>
