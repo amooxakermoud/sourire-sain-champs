@@ -502,7 +502,7 @@ const Index = () => {
             </div>
 
             {/* Map */}
-            <div className="bg-gray-100 rounded-xl h-96 flex items-center justify-center">
+            <div className="bg-gray-100 rounded-xl h-96 flex items-center justify-center w-full max-w-full">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d328.19625351537735!2d2.612125814269313!3d48.84733966492076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60f69e6d39dc3%3A0xc3d684eb725d595c!2sDr%20Marzak%20-%20Cabinet%20dentaire%20Dentalid!5e0!3m2!1sfr!2sma!4v1751137299231!5m2!1sfr!2sma"
                 width="600"
