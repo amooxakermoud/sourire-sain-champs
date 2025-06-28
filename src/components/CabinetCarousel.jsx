@@ -92,7 +92,7 @@ export function CabinetCarousel() {
           </Carousel>
 
           {/* Indicateurs personnalisés améliorés */}
-       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex justify-center items-center space-x-3 px-4 py-3 w-fit">
+       <div className="absolute hidden md:block bottom-6 left-1/2 transform -translate-x-1/2 flex justify-center items-center space-x-3 px-4 py-3 w-fit">
   {cabinetImages.map((_, index) => (
     <button
       key={index}
