@@ -23,7 +23,8 @@ export function CabinetCarousel() {
 
     const autoPlay = setInterval(() => {
       api.scrollNext();
-    }, 8000);
+
+    }, 4000);
 
     return () => clearInterval(autoPlay);
   }, [api]);
@@ -118,7 +119,7 @@ export function CabinetCarousel() {
               </button>
             ))}
           </div>
-          <div className="flex md:hidden flex-col items-center mt-4">
+          <div className="flex flex-col items-center mt-4">
             <p className="text-center text-sm text-gray-500 mt-2">
               {current} / {count}
             </p>
