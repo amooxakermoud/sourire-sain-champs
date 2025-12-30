@@ -291,17 +291,28 @@ const Index = () => {
         className="bg-gradient-to-br from-blue-50 to-green-50 py-20"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-center lg:text-left">
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Votre sourire, notre{" "}
-                <span className="text-blue-600">priorité</span>
-              </h1>
+          <div className="flex flex-col items-center text-center gap-12">
+            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
+              Votre sourire, notre{" "}
+              <span className="text-blue-600">priorité</span>
+            </h1>
+
+            <div className="relative w-full max-w-2xl">
+              <div className="bg-white rounded-2xl shadow-2xl p-2 transform rotate-2">
+                <img
+                  src="images/natural_look_smiling_with_healthy_white.jpg"
+                  alt="Sourire éclatant et naturel"
+                  className="rounded-xl w-full h-auto object-cover aspect-[4/3]"
+                />
+              </div>
+            </div>
+
+            <div className="max-w-3xl">
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Des soins dentaires de qualité dans un cabinet moderne et
                 accessible, au cœur de Champs-sur-Marne.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
                   size="lg"
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg"
@@ -328,15 +339,6 @@ const Index = () => {
                   <MapPin className="w-5 h-5 mr-2" />
                   Nous localiser
                 </Button>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="bg-white rounded-2xl shadow-2xl p-2 transform rotate-2">
-                <img
-                  src="images/natural_look_smiling_with_healthy_white.jpg"
-                  alt="Sourire éclatant et naturel"
-                  className="rounded-xl w-full h-auto object-cover aspect-[4/3]"
-                />
               </div>
             </div>
           </div>
