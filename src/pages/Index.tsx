@@ -331,14 +331,12 @@ const Index = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-white rounded-2xl shadow-2xl p-8 transform rotate-2">
-                <div className="bg-blue-600 rounded-xl h-64 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <Stethoscope className="w-16 h-16 mx-auto mb-4" />
-                    <p className="text-lg font-semibold">Cabinet Moderne</p>
-                    <p className="text-blue-200">Équipements de pointe</p>
-                  </div>
-                </div>
+              <div className="bg-white rounded-2xl shadow-2xl p-2 transform rotate-2">
+                <img
+                  src="images/natural_look_smiling_with_healthy_white.jpg"
+                  alt="Sourire éclatant et naturel"
+                  className="rounded-xl w-full h-auto object-cover aspect-[4/3]"
+                />
               </div>
             </div>
           </div>
