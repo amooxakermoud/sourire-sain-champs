@@ -7,8 +7,8 @@ import {
   CarouselNext,
 } from "@/components/ui/carousel";
 
-const cabinetImages = Array.from({ length: 12 }, (_, i) => ({
-  src: `images/image${i + 1}.jpg`,
+const cabinetImages = Array.from({ length: 4 }, (_, i) => ({
+  src: `images/accueil${i + 1}_dr_marzak.jpg`,
   alt: `Image ${i + 1}`,
 }));
 
@@ -24,7 +24,7 @@ export function CabinetCarousel() {
     const autoPlay = setInterval(() => {
       api.scrollNext();
 
-    }, 4000);
+    }, 8000);
 
     return () => clearInterval(autoPlay);
   }, [api]);
