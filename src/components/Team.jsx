@@ -44,13 +44,13 @@ const teamMembers = [
       </p>
     </div>
 
-    <div className="grid gap-12 md:grid-cols-3 items-center">
+    <div className="grid gap-12 md:grid-cols-3 items-center mt-3">
       {teamMembers.map((member, index) => (
         <div
           key={index}
           className="flex flex-col items-center text-center"
         >
-          <div className="w-40 h-40 rounded-full overflow-hidden mb-6 shadow-lg">
+          <div style={{width: '100%',maxWidth: '320px', height: '320px'}} className="rounded-full overflow-hidden mb-6 shadow-lg">
             <img
               src={member.img}
               alt={member.alt}
